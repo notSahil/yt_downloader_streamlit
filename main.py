@@ -9,7 +9,7 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 # Page config
 st.set_page_config(
-    page_title="YouTube Downloader - Sanu",
+    page_title="YouTube Downloader",
     page_icon="🎥",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -21,7 +21,7 @@ st.sidebar.header("Options")
 st.sidebar.write("🎯 Simple, safe YouTube Downloader built with Streamlit & yt-dlp")
 
 # ---- Title ----
-st.title("🎥 YouTube Downloader")
+st.title("🎥 YouTube Downloader - Sanu")
 st.markdown(
     """
     Paste a YouTube URL, choose Video or Audio, pick resolution for video, then click Download.
