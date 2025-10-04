@@ -48,14 +48,16 @@ if st.button("⬇️ Download Now"):
         with st.spinner("⏳ Downloading..."):
             # Set yt-dlp options
             ydl_opts = {
-                "outtmpl": os.path.join(DOWNLOAD_DIR, "%(title)s.%(ext)s"),
-                "noplaylist": True,
-                "quiet": True,
-                "no_warnings": True,
-                "http_headers": {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36"
-                }
-            }
+    "outtmpl": os.path.join(DOWNLOAD_DIR, "%(title)s.%(ext)s"),
+    "noplaylist": True,
+    "quiet": True,
+    "no_warnings": True,
+    "http_headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.youtube.com/"
+    }
+}
 
             if download_type == "Audio (MP3)":
                 ydl_opts.update({
