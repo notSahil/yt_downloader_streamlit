@@ -21,7 +21,7 @@ st.sidebar.header("Options")
 st.sidebar.write("🎯 Simple, safe YouTube Downloader built with Streamlit & yt-dlp")
 
 # ---- Title ----
-st.title("🎥 YouTube Downloader - Sanu")
+st.title("🎥 YouTube Downloader")
 st.markdown(
     """
     Paste a YouTube URL, choose Video or Audio, pick resolution for video, then click Download.
