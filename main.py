@@ -9,7 +9,7 @@ os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 # Page config
 st.set_page_config(
-    page_title="YouTube Downloader",
+    page_title="YouTube Downloader - Sanu",
     page_icon="🎥",
     layout="centered",
     initial_sidebar_state="expanded"
